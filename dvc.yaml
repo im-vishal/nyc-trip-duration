@@ -1,0 +1,8 @@
+stages:
+  build_features:
+    cmd: python src/features/build_features.py
+    deps:
+    - data/raw
+    - src/features/build_features.py
+    outs:
+    - data/processed
